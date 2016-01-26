@@ -1,0 +1,3 @@
+# Sauvegardes
+0 0 * * * su - backup-user -c "nice -19 ionice -c2 -n7 /bin/bash /home/backup-user/scripts/backup-daily.sh" >/dev/null 2>&1
+0 1 * * 1 su - backup-user -c "nice -19 ionice -c2 -n7 /bin/bash /home/backup-user/scripts/backup-weekly.sh" >/dev/null 2>&1
