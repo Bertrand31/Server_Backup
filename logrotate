@@ -1,0 +1,14 @@
+/home/backup-user/logs/backup-weekly.log {
+    monthly
+    rotate 8
+    compress
+    notifempty
+    create 600 backup-user backup-user
+}
+/home/backup-user/logs/backup-daily.log {
+    weekly
+    rotate 7
+    compress
+    notifempty
+    create 600 backup-user backup-user
+}
